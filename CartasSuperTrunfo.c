@@ -19,7 +19,10 @@ int main() {
         int populacao;
         float area;
         float pib;
-        int numerospontosturisticos; 
+        int numerospontosturisticos;
+        // adição de implemento nível aventureiro
+        float densidadepopulacional;
+        float pibpercapita; 
 
         char estado2;
         char codigocarta2 [20];
@@ -27,7 +30,10 @@ int main() {
         int populacao2;
         float area2;
         float pib2;
-        int numerospontosturisticos2; 
+        int numerospontosturisticos2;
+        // adição de implemento nível aventureiro
+        float densidadepopulacional2;
+        float pibpercapita2;
 
 
       // Área para entrada de dados
@@ -67,6 +73,13 @@ int main() {
       // Recebe a Quantidade de pontos turisticos da cidade
       printf("Insira a quantidade de pontos turísticos da cidade\n");
       scanf("%d" , &numerospontosturisticos);
+
+      // adição de implemento nível aventureiro
+
+      densidadepopulacional = (float) populacao / area;
+
+      pibpercapita = pib / (float)populacao;
+
 
 
       printf("Agora vamos preencher os dados da próxima carta \n");
@@ -109,6 +122,10 @@ int main() {
       scanf("%d" , &numerospontosturisticos2);
 
 
+        // adição de implemento nível aventureiro
+      densidadepopulacional2 = (float) populacao2 / area2;
+
+      pibpercapita2 = pib2 / (float)populacao2;
 
 
 
@@ -126,6 +143,11 @@ int main() {
     printf("Área: %f km² \n", area);
     printf("PIB: %f reais \n", pib);
     printf("Número de Pontos Turísticos: %d \n", numerospontosturisticos);
+       // adição de implemento nível aventureiro
+    printf("Densidade Populacional: %f hab/km² \n", densidadepopulacional);
+    printf("PIB per Capita: %f reais \n", pibpercapita);
+
+
 
     printf("\n");
     //exibe na tela dados da carta 2
@@ -137,6 +159,11 @@ int main() {
     printf("Área: %f km² \n", area2);
     printf("PIB: %f reais \n", pib2);
     printf("Número de Pontos Turísticos: %d \n", numerospontosturisticos2);
+              // adição de implemento nível aventureiro
+
+    printf("Densidade Populacional: %f hab/km² \n", densidadepopulacional2);
+    printf("PIB per Capita: %f reais \n", pibpercapita2);
+
 
 
 
