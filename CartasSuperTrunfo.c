@@ -23,6 +23,12 @@ int main() {
         // adição de implemento nível aventureiro
         float densidadepopulacional;
         float pibpercapita; 
+       // adição de implemento nível mestre
+          float inversoDesidadePopulacional;
+         float superPoder;
+
+
+
 
         char estado2;
         char codigocarta2 [20];
@@ -34,7 +40,9 @@ int main() {
         // adição de implemento nível aventureiro
         float densidadepopulacional2;
         float pibpercapita2;
-
+       // adição de implemento nível mestre
+        float inversoDesidadePopulacional2;
+        float superPoder2;
 
       // Área para entrada de dados
       printf("Desafio SuperTrunfo \n");
@@ -80,6 +88,16 @@ int main() {
 
       pibpercapita = pib / (float)populacao;
 
+      // adição de implemento nível mestre
+
+      inversoDesidadePopulacional = area /(float) populacao;
+
+      superPoder= (float)populacao 
+      + area 
+      + pib 
+      + (float)numerospontosturisticos
+      +pibpercapita 
+      + inversoDesidadePopulacional;
 
 
       printf("Agora vamos preencher os dados da próxima carta \n");
@@ -128,6 +146,17 @@ int main() {
       pibpercapita2 = pib2 / (float)populacao2;
 
 
+      // adição de implemento nível mestre
+
+      inversoDesidadePopulacional2 = area2 /(float) populacao2;
+
+      superPoder2= (float)populacao2 
+      + area2 
+      + pib2 
+      + (float)numerospontosturisticos
+      +pibpercapita2 
+      + inversoDesidadePopulacional2;
+
 
 
      // Área para exibição dos dados da cidade
@@ -143,7 +172,7 @@ int main() {
     printf("Área: %f km² \n", area);
     printf("PIB: %f reais \n", pib);
     printf("Número de Pontos Turísticos: %d \n", numerospontosturisticos);
-       // adição de implemento nível aventureiro
+      // adição de implemento nível aventureiro
     printf("Densidade Populacional: %f hab/km² \n", densidadepopulacional);
     printf("PIB per Capita: %f reais \n", pibpercapita);
 
@@ -159,10 +188,37 @@ int main() {
     printf("Área: %f km² \n", area2);
     printf("PIB: %f reais \n", pib2);
     printf("Número de Pontos Turísticos: %d \n", numerospontosturisticos2);
-              // adição de implemento nível aventureiro
-
+     // adição de implemento nível aventureiro
     printf("Densidade Populacional: %f hab/km² \n", densidadepopulacional2);
     printf("PIB per Capita: %f reais \n", pibpercapita2);
+    
+
+    // adição de implemento nível mestre
+    // Área para comparação dos dados da cidade
+
+    printf("\n");
+
+    printf("Agora vamos comparar as duas cartas \n");
+    printf("Caso o resultado da comparação for 01 carta 1 venceu\n");
+    printf("Caso o resultado da comparação for 00 carta 2 venceu\n");
+
+    printf("\n");
+
+    printf("População a carta que venceu foi:%d\n" , populacao>populacao2);
+    printf("Área a carta que venceu foi:%d\n", area>area2);
+    printf("PIB a carta que venceu foi:%d\n", pib>pib2);
+    printf("Número de Pontos Turísticos a carta que venceu foi:%d\n", numerospontosturisticos>numerospontosturisticos2);
+    printf("Densidade Populacional a carta que venceu foi:%d\n", densidadepopulacional < densidadepopulacional2);
+    printf("PIB per Capita a carta que venceu foi:%d\n", pibpercapita>pibpercapita2);
+    printf("Super poder a carta que venceu foi:%d\n", superPoder >  superPoder2);
+
+    printf("\n");
+
+
+
+
+
+    
 
 
 
