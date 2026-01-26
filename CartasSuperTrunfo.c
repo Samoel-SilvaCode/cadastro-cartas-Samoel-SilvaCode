@@ -153,7 +153,7 @@ int main() {
       superPoder2= (float)populacao2 
       + area2 
       + pib2 
-      + (float)numerospontosturisticos
+      + (float)numerospontosturisticos2
       +pibpercapita2 
       + inversoDesidadePopulacional2;
 
@@ -198,6 +198,12 @@ int main() {
 
     printf("\n");
 
+    /*
+
+    Feito comentario dessa parte do código para adptação da solicitação do Tema 3
+
+    Utilizar estruturas de decisão.
+
     printf("Agora vamos comparar as duas cartas \n");
     printf("Caso o resultado da comparação for 01 carta 1 venceu\n");
     printf("Caso o resultado da comparação for 00 carta 2 venceu\n");
@@ -213,6 +219,42 @@ int main() {
     printf("Super poder a carta que venceu foi:%d\n", superPoder >  superPoder2);
 
     printf("\n");
+
+    */
+
+
+      // implementação nível novato tema 3 estruturas de decisão.
+      printf("Agora vamos comparar um atributo das duas cartas: \n");
+
+      printf("\n");
+
+      printf("Atributo escolhido população!\n");
+      
+
+      printf("\n");
+
+
+
+      if (populacao > populacao2){
+
+        printf("Carta 1 %s (%c): %d\n" , nomecidade, estado, populacao);
+
+        printf("Carta 2 %s (%c): %d\n" , nomecidade2, estado2, populacao2);
+
+        printf("Carta 1 venceu\n");
+        
+      }
+      else{  
+        printf("Carta 1 %s (%c): %d\n" , nomecidade, estado, populacao);
+
+        printf("Carta 2 %s (%c): %d\n" , nomecidade2, estado2, populacao2);
+
+        printf("Carta 2 venceu\n");
+
+      }
+      
+
+
 
 
 
