@@ -13,6 +13,7 @@ seria criar copias das variaveis assim o programa consegue exibir duas cartas si
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
 
+        int atributoEscolhido;
         char estado;
         char codigocarta[20];
         char nomecidade [20];
@@ -223,6 +224,8 @@ int main() {
     */
 
 
+
+     /*
       // implementação nível novato tema 3 estruturas de decisão.
       printf("Agora vamos comparar um atributo das duas cartas: \n");
 
@@ -252,8 +255,188 @@ int main() {
         printf("Carta 2 venceu\n");
 
       }
-      
+    */
+      // Menu interarivo implemento  nivel aventureiro tema 3
 
+printf("## Escolha um atributo para comparar ##\n");
+printf("1 - População\n");
+printf("2 - Área \n");
+printf("3 - PIB\n");
+printf("4 - Pontos turisticos\n");
+printf("5 - Densidade Populacional\n");
+printf("6 - PIB per capita\n");
+printf("7 - Super Poder\n");
+printf("Digite sua escolha:");
+scanf("%d", &atributoEscolhido);
+
+
+// Lógica do menu interarivo implemento  nivel aventureiro tema 3
+
+switch (atributoEscolhido)
+{
+case 1:
+    if (populacao > populacao2)
+    {
+        printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s \n", nomecidade , nomecidade2);
+        printf("Atributo escolhido Populção \n");
+        printf("Populção Carta 1: %d VS População Carta 2: %d\n", populacao, populacao2);
+        printf("Carta 1 Venceu\n");
+    }else if (populacao == populacao2)
+    {
+         printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido Populção\n");
+        printf("Populção Carta 1: %d VS População Carta 2: %d\n", populacao, populacao2);
+        printf("Empate\n");
+    }else{
+         printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido Populção\n");
+        printf("Populção Carta 1: %d VS População Carta 2: %d\n", populacao, populacao2);
+        printf("Carta 2 Venceu\n");
+
+    }
+    
+    
+    break;
+
+    case 2:
+   if (area > area2)
+    {
+        printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido Área\n");
+        printf("Área Carta 1: %f VS Área Carta 2: %f\n", area, area2);
+        printf("Carta 1 Venceu\n");
+    }else if (area == area2)
+    {
+        printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido Área\n");
+        printf("Área Carta 1: %f VS Área Carta 2: %f\n", area, area2);
+        printf("Empate\n");
+    }else{
+      printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido Área\n");
+        printf("Área Carta 1: %f VS Área Carta 2: %f\n", area, area2);
+        printf("Carta 2 Venceu\n");
+
+    }
+    
+    break;
+
+    case 3:
+    if (pib > pib2)
+    {
+        printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido PIB\n");
+        printf("PIB Carta 1: %f VS PIB Carta 2: %f\n", pib, pib2);
+        printf("Carta 1 Venceu\n");
+    }else if (pib == pib2)
+    {
+        printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido PIB\n");
+        printf("PIB Carta 1: %f VS PIB Carta 2: %f\n", pib, pib2);
+        printf("Empate\n");
+    }else{
+        printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido PIB\n");
+        printf("PIB Carta 1: %f VS PIB Carta 2: %f\n", pib, pib2);
+        printf("Carta 2 Venceu\n");
+
+    }
+    
+    break;
+
+    case 4:
+   if (numerospontosturisticos > numerospontosturisticos)
+    {
+        printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido Pontos Turisticos\n");
+        printf("Pontos Turisticos Carta 1: %d VS Pontos turisticos Carta 2: %d\n", numerospontosturisticos, numerospontosturisticos2);
+        printf("Carta 1 Venceu\n");
+    }else if (numerospontosturisticos == numerospontosturisticos2)
+    {
+        printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido Pontos Turisticos\n");
+        printf("Pontos Turisticos Carta 1: %d VS Pontos turisticos Carta 2: %d\n", numerospontosturisticos, numerospontosturisticos2);
+        printf("Empate\n");
+    }else{
+        printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido Pontos Turisticos\n");
+        printf("Pontos Turisticos Carta 1: %d VS Pontos turisticos Carta 2: %d\n", numerospontosturisticos, numerospontosturisticos2);
+        printf("Carta 2 Venceu\n");
+    }
+    break;
+
+    case 5:
+   if (densidadepopulacional < densidadepopulacional2)
+    {
+        printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido Densidade Populacional\n");
+        printf("Densidade Populacional 1: %f VS Densidade Populacional Carta 2: %f\n", densidadepopulacional, densidadepopulacional2);
+        printf("Carta 1 Venceu\n");
+    }else if (densidadepopulacional == densidadepopulacional2)
+    {
+         printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido Densidade Populacional\n");
+        printf("Densidade Populacional 1: %f VS Densidade Populacional Carta 2: %f\n", densidadepopulacional, densidadepopulacional2);
+        printf("Empate\n");
+    }else{
+        printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido Densidade Populacional\n");
+        printf("Densidade Populacional 1: %f VS Densidade Populacional Carta 2: %f\n", densidadepopulacional, densidadepopulacional2);
+        printf("Carta 2 Venceu\n");
+
+    }
+    
+    break;
+
+    case 6:
+    if (pibpercapita > pibpercapita2)
+    {
+        printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido PIB PER CAPITA\n");
+        printf("PIB PER CAPITA Carta 1: %f VS PIB PER CAPITA Carta 2: %f\n", pibpercapita, pibpercapita2);
+        printf("Carta 1 Venceu\n");
+    }else if (pibpercapita == pibpercapita2)
+    {
+         printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido PIB PER CAPITA\n");
+        printf("PIB PER CAPITA Carta 1: %f VS PIB PER CAPITA Carta 2: %f\n", pibpercapita, pibpercapita2);
+        printf("Empate\n");
+    }else{
+        printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido PIB PER CAPITA\n");
+        printf("PIB PER CAPITA Carta 1: %f VS PIB PER CAPITA Carta 2: %f\n", pibpercapita, pibpercapita2);
+        printf("Carta 2 Venceu\n");
+
+    }
+    break;
+
+    case 7:
+    if (superPoder > superPoder2)
+    {
+        printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido Super Poder\n");
+        printf("Super Poder Carta 1: %f VS Super Poder Carta 2: %f\n", superPoder, superPoder2);
+        printf("Carta 1 Venceu\n");
+    }else if (superPoder == superPoder2)
+    {
+         printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido Super Poder\n");
+        printf("Super Poder Carta 1: %f VS Super Poder Carta 2: %f\n", superPoder, superPoder2);
+        printf("Empate\n");
+    }else{
+ printf("Cidade da Carta 1: %s VS Cidade da Carta 2: %s\n", nomecidade , nomecidade2);
+        printf("Atributo escolhido Super Poder\n");
+        printf("Super Poder Carta 1: %f VS Super Poder Carta 2: %f\n", superPoder, superPoder2);
+        printf("Carta 2 Venceu\n");
+
+    }
+    
+    break;
+
+default:
+    printf("Escolha uma opção válída\n");
+    break;
+}
 
 
 
